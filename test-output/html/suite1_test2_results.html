@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - User Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>User Test</h1>
+<p>
+  Test duration: 75.360s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.orangehrmlive.demo.testsuite.UsersTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  searchTheUserAndVerifyTheMessageRecordFound
+      </td>
+  <td class="duration">
+    7.013s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Nina.Patel", "ESS", "Nina Patel", "Enable"</span><br />
+    
+            <div class="testOutput">
+                        enter the username[[ChromeDriver: chrome on windows (53b278b64b130c265526601eefe40bd8)] -&gt; name: username]<br />
+                                enter the password[[ChromeDriver: chrome on windows (53b278b64b130c265526601eefe40bd8)] -&gt; name: password]<br />
+                                Clicking on Login Link [[ChromeDriver: chrome on windows (53b278b64b130c265526601eefe40bd8)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                click on Admin[[ChromeDriver: chrome on windows (53b278b64b130c265526601eefe40bd8)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[1]/aside[1]/nav[1]/div[2]/ul[1]/li[1]/a[1]/span[1]]<br />
+                                Verify System User[[ChromeDriver: chrome on windows (53b278b64b130c265526601eefe40bd8)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/h5[1]]<br />
+                                enter username[[ChromeDriver: chrome on windows (53b278b64b130c265526601eefe40bd8)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/input[1]]<br />
+                                Click on user role <br />
+                                Click on admin role [[ChromeDriver: chrome on windows (53b278b64b130c265526601eefe40bd8)] -&gt; xpath: //span[contains(text(),&apos;Admin&apos;)]]<br />
+                                enter the employee name[[ChromeDriver: chrome on windows (53b278b64b130c265526601eefe40bd8)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/input[1]]<br />
+                                click on status[[ChromeDriver: chrome on windows (53b278b64b130c265526601eefe40bd8)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/i[1]]<br />
+                                enter the status[[ChromeDriver: chrome on windows (53b278b64b130c265526601eefe40bd8)] -&gt; xpath: //span[contains(text(),&apos;Enabled&apos;)]]<br />
+                                Click on search button[[ChromeDriver: chrome on windows (53b278b64b130c265526601eefe40bd8)] -&gt; xpath: //button[@type=&apos;submit&apos;]]<br />
+                                Verify record found[[ChromeDriver: chrome on windows (53b278b64b130c265526601eefe40bd8)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/span[1]]<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Text is not displayed expected [(5) Records Found] but found [(7) Records Found]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:111)<br />
+              org.testng.Assert.failNotEquals(Assert.java:1578)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:150)<br />
+              org.testng.Assert.assertEquals(Assert.java:132)<br />
+              org.testng.Assert.assertEquals(Assert.java:656)<br />
+              com.orangehrmlive.demo.testsuite.UsersTest.searchTheUserAndVerifyTheMessageRecordFound(UsersTest.java:142)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:739)<br />
+              org.testng.TestRunner.run(TestRunner.java:614)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:421)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1112)<br />
+              org.testng.TestNG.run(TestNG.java:1079)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  searchTheUserAndVerifyTheMessageRecordFound
+      </td>
+  <td class="duration">
+    6.991s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Admin", "Admin", "Paul Collings", "Enable"</span><br />
+    
+            <div class="testOutput">
+                        enter the username[[ChromeDriver: chrome on windows (ff6a2717e9c8e4e72c7283a38b7c6203)] -&gt; name: username]<br />
+                                enter the password[[ChromeDriver: chrome on windows (ff6a2717e9c8e4e72c7283a38b7c6203)] -&gt; name: password]<br />
+                                Clicking on Login Link [[ChromeDriver: chrome on windows (ff6a2717e9c8e4e72c7283a38b7c6203)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                click on Admin[[ChromeDriver: chrome on windows (ff6a2717e9c8e4e72c7283a38b7c6203)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[1]/aside[1]/nav[1]/div[2]/ul[1]/li[1]/a[1]/span[1]]<br />
+                                Verify System User[[ChromeDriver: chrome on windows (ff6a2717e9c8e4e72c7283a38b7c6203)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/h5[1]]<br />
+                                enter username[[ChromeDriver: chrome on windows (ff6a2717e9c8e4e72c7283a38b7c6203)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/input[1]]<br />
+                                Click on user role <br />
+                                Click on admin role [[ChromeDriver: chrome on windows (ff6a2717e9c8e4e72c7283a38b7c6203)] -&gt; xpath: //span[contains(text(),&apos;Admin&apos;)]]<br />
+                                enter the employee name[[ChromeDriver: chrome on windows (ff6a2717e9c8e4e72c7283a38b7c6203)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/input[1]]<br />
+                                click on status[[ChromeDriver: chrome on windows (ff6a2717e9c8e4e72c7283a38b7c6203)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/i[1]]<br />
+                                enter the status[[ChromeDriver: chrome on windows (ff6a2717e9c8e4e72c7283a38b7c6203)] -&gt; xpath: //span[contains(text(),&apos;Enabled&apos;)]]<br />
+                                Click on search button[[ChromeDriver: chrome on windows (ff6a2717e9c8e4e72c7283a38b7c6203)] -&gt; xpath: //button[@type=&apos;submit&apos;]]<br />
+                                Verify record found[[ChromeDriver: chrome on windows (ff6a2717e9c8e4e72c7283a38b7c6203)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/span[1]]<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Text is not displayed expected [(5) Records Found] but found [(7) Records Found]</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              org.testng.Assert.fail(Assert.java:111)<br />
+              org.testng.Assert.failNotEquals(Assert.java:1578)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:150)<br />
+              org.testng.Assert.assertEquals(Assert.java:132)<br />
+              org.testng.Assert.assertEquals(Assert.java:656)<br />
+              com.orangehrmlive.demo.testsuite.UsersTest.searchTheUserAndVerifyTheMessageRecordFound(UsersTest.java:142)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:739)<br />
+              org.testng.TestRunner.run(TestRunner.java:614)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:421)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1112)<br />
+              org.testng.TestNG.run(TestNG.java:1079)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  searchTheUserAndVerifyTheMessageRecordFound
+      </td>
+  <td class="duration">
+    6.967s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Odis.Adalwin", "Admin", "Odis Adalwin", "Enable"</span><br />
+    
+            <div class="testOutput">
+                        enter the username[[ChromeDriver: chrome on windows (ce75adc36d3c18d8f66178e6a5884a49)] -&gt; name: username]<br />
+                                enter the password[[ChromeDriver: chrome on windows (ce75adc36d3c18d8f66178e6a5884a49)] -&gt; name: password]<br />
+                                Clicking on Login Link [[ChromeDriver: chrome on windows (ce75adc36d3c18d8f66178e6a5884a49)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                click on Admin[[ChromeDriver: chrome on windows (ce75adc36d3c18d8f66178e6a5884a49)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[1]/aside[1]/nav[1]/div[2]/ul[1]/li[1]/a[1]/span[1]]<br />
+                                Verify System User[[ChromeDriver: chrome on windows (ce75adc36d3c18d8f66178e6a5884a49)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/h5[1]]<br />
+                                enter username[[ChromeDriver: chrome on windows (ce75adc36d3c18d8f66178e6a5884a49)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/input[1]]<br />
+                                Click on user role <br />
+                                Click on admin role [[ChromeDriver: chrome on windows (ce75adc36d3c18d8f66178e6a5884a49)] -&gt; xpath: //span[contains(text(),&apos;Admin&apos;)]]<br />
+                                enter the employee name[[ChromeDriver: chrome on windows (ce75adc36d3c18d8f66178e6a5884a49)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/input[1]]<br />
+                                click on status[[ChromeDriver: chrome on windows (ce75adc36d3c18d8f66178e6a5884a49)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/i[1]]<br />
+                                enter the status[[ChromeDriver: chrome on windows (ce75adc36d3c18d8f66178e6a5884a49)] -&gt; xpath: //span[contains(text(),&apos;Enabled&apos;)]]<br />
+                                Click on search button[[ChromeDriver: chrome on windows (ce75adc36d3c18d8f66178e6a5884a49)] -&gt; xpath: //button[@type=&apos;submit&apos;]]<br />
+                                Verify record found[[ChromeDriver: chrome on windows (ce75adc36d3c18d8f66178e6a5884a49)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/span[1]]<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Text is not displayed expected [(5) Records Found] but found [(7) Records Found]</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              org.testng.Assert.fail(Assert.java:111)<br />
+              org.testng.Assert.failNotEquals(Assert.java:1578)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:150)<br />
+              org.testng.Assert.assertEquals(Assert.java:132)<br />
+              org.testng.Assert.assertEquals(Assert.java:656)<br />
+              com.orangehrmlive.demo.testsuite.UsersTest.searchTheUserAndVerifyTheMessageRecordFound(UsersTest.java:142)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:739)<br />
+              org.testng.TestRunner.run(TestRunner.java:614)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:421)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1112)<br />
+              org.testng.TestNG.run(TestNG.java:1079)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  searchTheUserAndVerifyTheMessageRecordFound
+      </td>
+  <td class="duration">
+    6.817s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Cassidy.Hope", "ESS", "Cassidy Hope", "Enable"</span><br />
+    
+            <div class="testOutput">
+                        enter the username[[ChromeDriver: chrome on windows (da5eb17a4ecb59ed5c3c3c9d220aa292)] -&gt; name: username]<br />
+                                enter the password[[ChromeDriver: chrome on windows (da5eb17a4ecb59ed5c3c3c9d220aa292)] -&gt; name: password]<br />
+                                Clicking on Login Link [[ChromeDriver: chrome on windows (da5eb17a4ecb59ed5c3c3c9d220aa292)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                click on Admin[[ChromeDriver: chrome on windows (da5eb17a4ecb59ed5c3c3c9d220aa292)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[1]/aside[1]/nav[1]/div[2]/ul[1]/li[1]/a[1]/span[1]]<br />
+                                Verify System User[[ChromeDriver: chrome on windows (da5eb17a4ecb59ed5c3c3c9d220aa292)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/h5[1]]<br />
+                                enter username[[ChromeDriver: chrome on windows (da5eb17a4ecb59ed5c3c3c9d220aa292)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/input[1]]<br />
+                                Click on user role <br />
+                                Click on admin role [[ChromeDriver: chrome on windows (da5eb17a4ecb59ed5c3c3c9d220aa292)] -&gt; xpath: //span[contains(text(),&apos;Admin&apos;)]]<br />
+                                enter the employee name[[ChromeDriver: chrome on windows (da5eb17a4ecb59ed5c3c3c9d220aa292)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/input[1]]<br />
+                                click on status[[ChromeDriver: chrome on windows (da5eb17a4ecb59ed5c3c3c9d220aa292)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/i[1]]<br />
+                                enter the status[[ChromeDriver: chrome on windows (da5eb17a4ecb59ed5c3c3c9d220aa292)] -&gt; xpath: //span[contains(text(),&apos;Enabled&apos;)]]<br />
+                                Click on search button[[ChromeDriver: chrome on windows (da5eb17a4ecb59ed5c3c3c9d220aa292)] -&gt; xpath: //button[@type=&apos;submit&apos;]]<br />
+                                Verify record found[[ChromeDriver: chrome on windows (da5eb17a4ecb59ed5c3c3c9d220aa292)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/span[1]]<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Text is not displayed expected [(5) Records Found] but found [(7) Records Found]</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              org.testng.Assert.fail(Assert.java:111)<br />
+              org.testng.Assert.failNotEquals(Assert.java:1578)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:150)<br />
+              org.testng.Assert.assertEquals(Assert.java:132)<br />
+              org.testng.Assert.assertEquals(Assert.java:656)<br />
+              com.orangehrmlive.demo.testsuite.UsersTest.searchTheUserAndVerifyTheMessageRecordFound(UsersTest.java:142)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:739)<br />
+              org.testng.TestRunner.run(TestRunner.java:614)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:421)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1112)<br />
+              org.testng.TestNG.run(TestNG.java:1079)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.orangehrmlive.demo.testsuite.UsersTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  adminShouldAddUserSuccessFully
+      </td>
+  <td class="duration">
+    7.924s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        enter the username[[ChromeDriver: chrome on windows (0d877676380553970e47e965ad2b09d6)] -&gt; name: username]<br />
+                                enter the password[[ChromeDriver: chrome on windows (0d877676380553970e47e965ad2b09d6)] -&gt; name: password]<br />
+                                Clicking on Login Link [[ChromeDriver: chrome on windows (0d877676380553970e47e965ad2b09d6)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                click on Admin[[ChromeDriver: chrome on windows (0d877676380553970e47e965ad2b09d6)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[1]/aside[1]/nav[1]/div[2]/ul[1]/li[1]/a[1]/span[1]]<br />
+                                Verify System User[[ChromeDriver: chrome on windows (0d877676380553970e47e965ad2b09d6)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/h5[1]]<br />
+                                click on add button [[ChromeDriver: chrome on windows (0d877676380553970e47e965ad2b09d6)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/button[1]]<br />
+                                Verify add user[[ChromeDriver: chrome on windows (0d877676380553970e47e965ad2b09d6)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/h6[1]]<br />
+                                Click on user role <br />
+                                Click on admin role [[ChromeDriver: chrome on windows (0d877676380553970e47e965ad2b09d6)] -&gt; xpath: //span[contains(text(),&apos;Admin&apos;)]]<br />
+                                enter Employee name [[ChromeDriver: chrome on windows (0d877676380553970e47e965ad2b09d6)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/input[1]]<br />
+                                enter username [[ChromeDriver: chrome on windows (0d877676380553970e47e965ad2b09d6)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[4]/div[1]/div[2]/input[1]]<br />
+                                Select status[[ChromeDriver: chrome on windows (0d877676380553970e47e965ad2b09d6)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]]<br />
+                                Click on disabled[[ChromeDriver: chrome on windows (0d877676380553970e47e965ad2b09d6)] -&gt; xpath: //span[contains(text(),&apos;Disabled&apos;)]]<br />
+                                enter the password [[ChromeDriver: chrome on windows (0d877676380553970e47e965ad2b09d6)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/div[2]/input[1]]<br />
+                                enter the confirm password[[ChromeDriver: chrome on windows (0d877676380553970e47e965ad2b09d6)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[2]/div[1]/div[2]/div[1]/div[2]/input[1]]<br />
+                                Click on Save Button[[ChromeDriver: chrome on windows (0d877676380553970e47e965ad2b09d6)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[3]/button[2]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  searchTheUserCreatedAndVerifyIt
+      </td>
+  <td class="duration">
+    6.686s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        enter the username[[ChromeDriver: chrome on windows (edc64b3c78465b781dafe0e0c8ff9563)] -&gt; name: username]<br />
+                                enter the password[[ChromeDriver: chrome on windows (edc64b3c78465b781dafe0e0c8ff9563)] -&gt; name: password]<br />
+                                Clicking on Login Link [[ChromeDriver: chrome on windows (edc64b3c78465b781dafe0e0c8ff9563)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                click on Admin[[ChromeDriver: chrome on windows (edc64b3c78465b781dafe0e0c8ff9563)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[1]/aside[1]/nav[1]/div[2]/ul[1]/li[1]/a[1]/span[1]]<br />
+                                Verify System User[[ChromeDriver: chrome on windows (edc64b3c78465b781dafe0e0c8ff9563)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/h5[1]]<br />
+                                Enter User Name Verification[[ChromeDriver: chrome on windows (edc64b3c78465b781dafe0e0c8ff9563)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/input[1]]<br />
+                                Click on user role <br />
+                                Click on admin role [[ChromeDriver: chrome on windows (edc64b3c78465b781dafe0e0c8ff9563)] -&gt; xpath: //span[contains(text(),&apos;Admin&apos;)]]<br />
+                                Click on status button[[ChromeDriver: chrome on windows (edc64b3c78465b781dafe0e0c8ff9563)] -&gt; xpath: //div[contains(text(),&apos;-- Select --&apos;)]]<br />
+                                Click on status button[[ChromeDriver: chrome on windows (edc64b3c78465b781dafe0e0c8ff9563)] -&gt; xpath: //span[contains(text(),&apos;Disabled&apos;)]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThatAdminShouldDeleteTheUserSuccessFully
+      </td>
+  <td class="duration">
+    6.706s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        enter the username[[ChromeDriver: chrome on windows (e583ba186b905fd1de5875ad792fd1fb)] -&gt; name: username]<br />
+                                enter the password[[ChromeDriver: chrome on windows (e583ba186b905fd1de5875ad792fd1fb)] -&gt; name: password]<br />
+                                Clicking on Login Link [[ChromeDriver: chrome on windows (e583ba186b905fd1de5875ad792fd1fb)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                click on Admin[[ChromeDriver: chrome on windows (e583ba186b905fd1de5875ad792fd1fb)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[1]/aside[1]/nav[1]/div[2]/ul[1]/li[1]/a[1]/span[1]]<br />
+                                Verify System User[[ChromeDriver: chrome on windows (e583ba186b905fd1de5875ad792fd1fb)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/h5[1]]<br />
+                                Enter User Name Verification[[ChromeDriver: chrome on windows (e583ba186b905fd1de5875ad792fd1fb)] -&gt; xpath: //body/div[@id=&apos;app&apos;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/input[1]]<br />
+                                Click on user role <br />
+                                Click on admin role [[ChromeDriver: chrome on windows (e583ba186b905fd1de5875ad792fd1fb)] -&gt; xpath: //span[contains(text(),&apos;Admin&apos;)]]<br />
+                                Click on status button[[ChromeDriver: chrome on windows (e583ba186b905fd1de5875ad792fd1fb)] -&gt; xpath: //div[contains(text(),&apos;-- Select --&apos;)]]<br />
+                                Click on status button[[ChromeDriver: chrome on windows (e583ba186b905fd1de5875ad792fd1fb)] -&gt; xpath: //span[contains(text(),&apos;Disabled&apos;)]]<br />
+                                Click on search button[[ChromeDriver: chrome on windows (e583ba186b905fd1de5875ad792fd1fb)] -&gt; xpath: //button[@type=&apos;submit&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

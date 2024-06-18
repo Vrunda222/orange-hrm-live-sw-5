@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login Test"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="13.351">
+  <properties />
+  
+  
+            <testcase name="verifyErrorMessageWithInvalidCredentials" time="1.549" classname="com.orangehrmlive.demo.testsuite.LoginTest" />
+                <testcase name="verifyUserShouldLogOutSuccessFully" time="2.913" classname="com.orangehrmlive.demo.testsuite.LoginTest" />
+                <testcase name="verifyErrorMessageWithInvalidCredentials" time="1.633" classname="com.orangehrmlive.demo.testsuite.LoginTest" />
+                <testcase name="verifyErrorMessageWithInvalidCredentials" time="1.535" classname="com.orangehrmlive.demo.testsuite.LoginTest" />
+                <testcase name="verifyErrorMessageWithInvalidCredentials" time="1.942" classname="com.orangehrmlive.demo.testsuite.LoginTest" />
+                <testcase name="verifyThatTheLogoDisplayOnHomePage" time="2.014" classname="com.orangehrmlive.demo.testsuite.LoginTest" />
+                <testcase name="verifyUserShouldLoginSuccessFully" time="1.765" classname="com.orangehrmlive.demo.testsuite.LoginTest" />
+      
+</testsuite>
